@@ -1,5 +1,10 @@
 #!/usr/bin/env python
+"""
+This script repeats a two steps of the workflow many times
+varying some of the run parameters. 
 
+It can be modified to be used for other cases.
+"""
 import sys
 
 from pyworkflow.manager import Manager
@@ -11,9 +16,8 @@ from pyworkflow.em.packages.relion import ProtRelionRefine3D
 def usage(error):
     print """
     ERROR: %s
-    This script repeats a simple workflow a number of times.
-    
-    Usage: scipion python run_miniworkflows.py PROJECT PROCOTOL [N=3]
+
+    Usage: scipion python run_steps.py PROJECT PROCOTOL [N=3]
         PROJECT: provide the project name to execute the workflow.
         PROCOTOL: provide the protocol id to be used as input.
         N: the number of times to repeat the workflow.
