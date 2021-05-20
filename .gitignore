@@ -1,0 +1,6 @@
+data
+.idea
+*pyc
+config.py
+build
+
